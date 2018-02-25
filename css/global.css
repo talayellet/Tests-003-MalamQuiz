@@ -1,0 +1,272 @@
+/* Global
+----------*/
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #e3e0cf;
+}
+
+/* Navbar
+---------- */
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+#userName {
+    font-size: 1.6em;
+    color: #ffffff;
+}
+/* Sidebar
+---------- */
+.sidebar-col {
+    background-color: #9fa8a3;
+}
+.sidebar-col .panel-heading {
+    direction: rtl;
+    font-size: 1.5em;
+}
+.sidebar {
+    width: 100%;
+}
+/* Progress bar */
+.progress {
+    background-color: transparent;
+    box-shadow: unset;
+    border-radius: 5px;
+}
+#NotRunRate {
+    width: 100%;
+}
+#passRate {
+    width: 0;
+}
+#failRate {
+    width: 0;
+}
+#currQuestion {
+    direction: rtl;
+}
+/*Cards
+---------*/
+.card-wrapper {
+    min-height: 330px;    
+    display: flex;
+    flex-direction: column;
+}
+.jumbotron {
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+.container-fluid .jumbotron {
+    padding: 20px;
+}
+/* Name */
+.name-wrapper {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.name {
+    display: flex;
+    justify-content: center;
+}
+.name form {
+    width: 85%;
+}
+.name input {
+    direction: rtl;
+}
+.setUser-wrapper{
+    height: 15%;
+}
+/* Questions
+--------------*/
+.question-wrapper{
+    min-height: 50vh;
+    padding: 5px;
+}
+.title-wrapper {
+    width: 100%;
+}
+.title-wrapper h1 {
+    font-size: 1.5em;
+    line-height: 1.7em;
+}
+.questionBody-wrapper {
+    width: 100%;
+}
+.questionBody-wrapper .alert {
+    direction: rtl;
+}
+/* Complete Questions
+-------------------- */
+.form-group.complete-group {
+    margin: 0;
+    direction: rtl;
+    line-height: 1.5em;
+}
+.control-label.complete-label {
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.form-control.complete-input {
+    display: inline-block;
+    width: 50%;
+    font-size: 1em;
+}
+/* Multi Choice questions 
+------------------------*/
+.input-group.multi {
+    direction: rtl;
+}
+
+.input-group.multi:not(:last-of-type) {
+    padding-bottom: 5px;
+}
+.input-group-addon.multi {
+    border-right: 1px solid #cccccc;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-control.multi {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+.form-control.multi[disabled] {
+    background-color: transparent;
+    pointer-events: none;
+}
+/* Drag & Drop questions 
+------------------------*/
+/* Drag */
+.drag-wrapper, .drop-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.img-drag {
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-drop {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Drop */
+.drop-box {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.fa-arrow-left {
+    display: block;
+}
+/*Card buttons
+---------------------*/
+/* Next */
+.next-wrapper {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.ansBtn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.next-btn {
+    min-width: 150px;
+}
+.test-btn {
+    min-width: 150px;
+}
+
+/*Pagination
+--------------*/
+#pagiWrapper {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#pagiWrapper ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* For IE*/
+    zoom:1;
+    *display: inline;
+}
+#pagiWrapper li {
+    float: left;
+}
+
+/* Test Score
+---------- */
+#scoreMsg {
+    direction: rtl;
+    font-size: 3em;
+}
+
+/*******
+ TABLETS
+********/
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+    /* Sidebar
+    ---------- */
+    .sidebar-col {
+        height: calc(100vh - 54px);
+        padding-top: 20px;
+    }
+}
+
+/*******
+ DESKTOPS
+********/
+@media only screen and (min-width: 1200px) {
+    /* Questions
+    --------------*/
+    .title-wrapper {
+        height: 25%;
+    }
+    .title-wrapper h1 {
+        font-size: 3em;
+        line-height: 1.3em;
+    }
+    /* Complete Questions
+    -------------------- */
+    .control-label.complete-label {
+        font-size: 2em;
+    }
+    .form-control.complete-input {
+        width: 50%;
+        font-size: 2em;
+    }
+}
